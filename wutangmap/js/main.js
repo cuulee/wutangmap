@@ -1,4 +1,3 @@
-$(document).ready(function(){
     var cities;
     var map = L.map('map').setView([39.0, 25.7],2);
     
@@ -6,6 +5,10 @@ $(document).ready(function(){
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
 }).addTo(map);
 
-}); //end main.js
 
+var wuIcon = L.icon({
+    iconUrl: 'Wutang.png',
+    iconSize:     [50, 50],
+});
 
+L.marker([51.5, -0.09], {icon: wuIcon}).addTo(map);
