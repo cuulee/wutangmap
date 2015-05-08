@@ -1,3 +1,4 @@
+$(document).ready(function(){ 
     var cities;
     var map = L.map('map').setView([39.0, 25.7],2);
     
@@ -5,10 +6,30 @@
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
 }).addTo(map);
 
+    //push geojson data to load and create different map components
+    $.getJSON("data/wutang_shapes.geojson")
+        .done(function(data) {
+            var info = processData(data);
+            createIcons(data);
+        })
+    .fail(function() { alert("There has been a problem loading the data")});
+    
 
-var wuIcon = L.icon({
-    iconUrl: 'Wutang.png',
-    iconSize:     [50, 50],
-});
+    function processData(data){
+        console.log(data);
+        
+    }; //end processData
+    
+    function createIcons(data){
+        var wuIcon = L.icon({
+            iconUrl: 'Wutang.png',
+            iconSize:     [50, 50],
+        });
 
-L.marker([51.5, -0.09], {icon: wuIcon}).addTo(map);
+        L.marker([51.5, -0.09], {icon: wuIcon}).addTo(map);
+      
+    }; //end createIcons
+    
+
+});//end main.js
+
