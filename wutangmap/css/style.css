@@ -1,3 +1,78 @@
 #map{
-    height: 600px;
+    height: 450px;
+    width: 90%;
+    margin: auto;
+}
+
+body {
+    background-image: url('../assets/blackorchid.png');
+}
+
+h1,h2,h3,h4,h5,h6,a,li{
+    color: #FFCC00; 
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    color: #888; 
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: #FFCC00;
+}
+
+#header{    
+    text-align: center;
+}
+
+#graphics {
+}
+
+#about{
+    
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(119, 119, 119, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 18px;
+    background-color: rgba(56, 55, 55, 1);
+    border-width: 0px;
+    border-radius: 0px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(119, 119, 119, 1);
+    background-color: rgba(56, 55, 55, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 204, 0, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 204, 0, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #ffcc00;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #ffcc00;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffcc00;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #383737;
 }

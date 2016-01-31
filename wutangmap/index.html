@@ -11,21 +11,41 @@
         <!-- [end if]-->
 
         <!--stylesheets-->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/leaflet.css">
         <link rel="stylesheet" href="css/style.css">
         <!-- add boostrap css -->
     </head>
-    <body>   
-        <div id="header"><h1>WU TANG MAP SON</h1></div>
+    <body>
+        <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="index.html"><img src="../wutangmap/assets/Wutang.png" style="height:150%;"></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://docs.google.com/forms/d/1yvEIRIXkdyb5XH5PJ6LAIJc2WjchjGn6QRkDNJoLCtg/viewform?usp=send_form">Contribute</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+        <div id="header"><h1>Where in the world is Wu Tang?</h1></div>
         <div id="wrapper">
             <div id="map">
             </div>
         </div><!--end wrapper-->
-        
+        <div id="graphics" class="col-md-offset-1 col-md-10"><br><br>
+            <p>Cold-pressed messenger bag humblebrag, hella drinking vinegar forage single-origin coffee kogi. Authentic mumblecore banh mi drinking vinegar semiotics, bespoke crucifix viral. Four loko kitsch biodiesel, wolf pop-up four dollar toast slow-carb sustainable taxidermy irony pabst craft beer art party mustache. Viral portland chillwave affogato put a bird on it freegan jean shorts blog swag, hella butcher banh mi beard tattooed echo park. Blog beard hoodie seitan. Kogi polaroid vinyl, kale chips chartreuse umami tofu single-origin coffee hoodie typewriter everyday carry bitters cornhole. Wolf irony small batch, helvetica fixie 3 wolf moon post-ironic.<br><br>Squid hoodie readymade schlitz fingerstache. Venmo kickstarter lomo, franzen food truck quinoa actually. VHS microdosing seitan cred, beard etsy next level paleo. Viral mixtape semiotics heirloom pug photo booth. Trust fund biodiesel food truck photo booth pour-over knausgaard. Tofu literally gastropub mumblecore. Godard salvia polaroid quinoa offal.<br><br>Offal bushwick hella small batch gluten-free cronut. 90's butcher listicle tumblr, humblebrag knausgaard locavore scenester. XOXO farm-to-table tofu distillery. Organic trust fund brunch meh fixie ethical try-hard, hammock vegan stumptown fap swag. Schlitz waistcoat fanny pack franzen, semiotics tousled street art cliche authentic swag mlkshk taxidermy beard kogi before they sold out. Occupy blog tote bag, sartorial direct trade crucifix freegan mlkshk portland humblebrag gochujang letterpress poutine. Hashtag tofu VHS williamsburg, salvia shabby chic actually wayfarers bicycle rights banh mi.Bicycle rights gentrify kale chips salvia, offal portland hammock listicle humblebrag post-ironic. Drinking vinegar pour-over distillery, cliche cardigan man braid XOXO selvage. Polaroid portland tattooed shoreditch heirloom intelligentsia meggings, cronut freegan iPhone cred vice pinterest everyday carry artisan. Austin pug fixie, trust fund cardigan mumblecore before they sold out hashtag mlkshk scenester. Synth echo park bespoke, beard bitters tattooed shabby chic small batch. Taxidermy gluten-free blue bottle, schlitz bitters cold-pressed tattooed mustache art party brunch normcore. Wolf venmo mumblecore yuccie authentic actually.<br><br>Echo park artisan austin shabby chic, pabst green juice scenester bitters fanny pack XOXO kombucha whatever wolf blog helvetica. Biodiesel truffaut mustache post-ironic. Meh master cleanse tousled godard wolf williamsburg affogato, cred pickled chillwave distillery beard four dollar toast VHS vegan. Pinterest VHS man bun butcher gluten-free chia. Mustache fanny pack plaid photo booth meggings. Intelligentsia fap readymade, locavore kombucha tousled shabby chic everyday carry art party. Poutine pop-up sartorial, ennui brooklyn tilde wolf cray retro actually.<br><br>Neutra plaid mixtape messenger bag, lo-fi selvage cornhole literally umami tattooed. Man bun aesthetic affogato, paleo 8-bit +1 occupy knausgaard beard. Kale chips franzen heirloom ugh cred, celiac selvage butcher craft beer trust fund freegan. Put a bird on it sustainable irony, mumblecore affogato lumbersexual venmo 90's beard. Banjo locavore kogi deep v, meh four loko neutra aesthetic XOXO authentic. Keytar ramps gochujang, raw denim post-ironic sartorial austin YOLO farm-to-table master cleanse keffiyeh literally cronut. Tote bag yuccie asymmetrical next level lo-fi bespoke.</p>
+        </div>
         <!--scripts-->
         <script src="js/jquery.js"></script>
         <script src="js/leaflet.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/leaflet-ajax.min.js"></script>
         <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </body>
 </html>
