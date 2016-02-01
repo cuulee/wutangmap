@@ -10,7 +10,7 @@ $(document).ready(function(){
         "weight": 1,
         "opacity": 1,
         "fillColor": "#FFCC00",
-        "fillOpacity": .65
+        "fillOpacity": .45
     };
     
     var shapeLayer = new L.GeoJSON.AJAX("data/wutang_shapes.geojson", {
@@ -22,10 +22,23 @@ $(document).ready(function(){
     });       
     shapeLayer.addTo(map);
     
-    //need to edit and add custom icons
-    var pointLayer = new L.GeoJSON.AJAX("data/wutang_points.geojson");
-    pointLayer.addTo(map);
+    var wuIcon = L.icon({
+        iconUrl: '/assets/Wutang.png',
+        iconSize:     [20, 20],
+        shadowSize: [30,30],
+        shadowAnchor: [20,20]
+    });
     
+    //need to edit and add custom icons
+    var pointLayer = new L.GeoJSON.AJAX("data/wutang_points.geojson", {
+        pointToLayer: function(data, latlng){
+            return L.marker(latlng, {icon: wuIcon});
+        },
+        onEachFeature: function(feature, layer){
+            layer.bindPopup(feature.properties.lyric);
+        }
+    });
+    pointLayer.addTo(map);
     
     
     /*
