@@ -39,23 +39,5 @@ $(document).ready(function(){
         }
     });
     pointLayer.addTo(map);
-    
-    
-    /*
-    $.getJSON("data/wutang_points.geojson")
-        .done(function(data) {
-            createIcons(data);
-        }).fail(function() { alert("There has been a problem loading the data")});
-
-    function createIcons(data){
-        var wuIcon = L.icon({
-            iconUrl: '../wutangmap/assets/Wutang.png',
-            iconSize:     [50, 50],
-        });
-
-        L.marker([51.5, -0.09], {icon: wuIcon}).addTo(map);
-      
-    }; //end createIcons
-*/
 });//end main.js
 
